@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Flow</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="top-bar">
+            <h1>Focus Flow</h1>
+        </nav>
+
+        <div class="timer-card">
+            <div class="progress-ring">
+                <div class="timer-display">
+                    <span id="minutes">25</span>
+                    <span class="colon">:</span>
+                    <span id="seconds">00</span>
+                </div>
+            </div>
+            
+            <div class="mode-badge" id="mode-badge">
+                <span id="mode-text">Focus Time</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn secondary" id="reset">
+                Reset
+            </button>
+            
+            <button class="control-btn primary" id="start-pause">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 3L19 12L5 21V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Start Focus</span>
+            </button>
+            
+            <button class="control-btn secondary" id="toggle-mode">
+                Skip
+            </button>
+        </div>
+
+        <div class="stats-card">
+            <div class="stat-item">
+                <span class="stat-value">0</span>
+                <span class="stat-label">Focus Sessions</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">0:00</span>
+                <span class="stat-label">Total Focus Time</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
